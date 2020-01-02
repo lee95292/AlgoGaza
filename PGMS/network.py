@@ -11,6 +11,7 @@ def solution(n, computers):
         else:
             q.put(i)
             answer+=1
+            
         while q.qsize()>0:
             vidx=q.get()
             visited[vidx]=1
