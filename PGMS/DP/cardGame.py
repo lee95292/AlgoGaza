@@ -1,3 +1,8 @@
+import sys
+# 재귀 스택 걸림!!!
+sys.setrecursionlimit(10**6)
+
+
 def solution(left, right):
     L = len(left)
     R = len(right)
@@ -9,7 +14,6 @@ def solution(left, right):
         if(a == L or b == R):
             return 0
 
-        # visited
         if(dp[a][b] != -1):
             return dp[a][b]
 
@@ -21,6 +25,3 @@ def solution(left, right):
         return dp[a][b]
 
     return recurs(0, 0)
-
-
-solution([3, 2, 5], [2, 4, 1])
