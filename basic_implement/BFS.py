@@ -13,7 +13,7 @@ def listBFS(llist):
 
     def BFS(k):
         if(visited[k] == 1):
-            return k
+            return -1
         else:
             visited[k] = 1
             print("visit"+str(k))
