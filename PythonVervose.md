@@ -20,6 +20,15 @@ routesOut = sorted(routes, key=lambda route: route[1])
 
 ---
 
+### List
+
+List to String
+
+```pythton
+mylsit=['22','424','ab']
+''.join(mylist)
+```
+
 ### Set
 
 ```python
