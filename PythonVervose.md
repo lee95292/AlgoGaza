@@ -52,3 +52,11 @@ add /discard/ intersect/ difference
 +: 이건 합집합 연산을 하지 않는다
 
 ## 연산자
+
+## 기타
+
+```python
+sys.setrecursionlimit(10**6)
+```
+
+파이썬 기본 재귀함수 콜스택은 1000. >> 재귀를 이용해 문제를 풀려면 설정해주자.
