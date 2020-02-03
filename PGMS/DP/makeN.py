@@ -1,3 +1,5 @@
+# Colloboration[k]는 N을 k회 사용하여 만들 수 있는 수의 집합
+
 import math
 
 
