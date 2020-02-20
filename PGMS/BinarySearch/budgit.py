@@ -1,6 +1,6 @@
 def solution(budgets, M):
     budgets.sort()
-    budgetSum=[]
+    budgetSum=[] 
     lb=len(budgets)
 
     for i in range(0,lb):
