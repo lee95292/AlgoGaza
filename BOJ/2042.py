@@ -1,3 +1,5 @@
+# segment_tree
+
 import sys
 input = sys.stdin.readline
 sys.setrecursionlimit(10**6)
@@ -49,6 +51,7 @@ init(1, len(arr)-1, 1)
 for i in inst:
     if(i[0] == 1):
         update(1, len(arr)-1, 1, i[1], i[2]-arr[i[1]])
+        arr[i[1]] = i[2]
     elif(i[0] == 2):
         print(segSum(1, len(arr)-1, 1, i[1], i[2]))
 
