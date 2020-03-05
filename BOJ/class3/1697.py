@@ -1,3 +1,4 @@
+# BFS
 from collections import deque
 
 a, b = map(int, input().split())
