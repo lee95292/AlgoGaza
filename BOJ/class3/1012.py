@@ -1,3 +1,6 @@
+##문제 : 배추농장의 배추들에게 상하좌우로 전파되는 농약류 지렁이의 최소개수를 구하는 문제
+## 해결방법: 완전탐색
+
 import sys
 sys.setrecursionlimit(10**6)
 input = sys.stdin.readline
