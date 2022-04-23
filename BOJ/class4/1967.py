@@ -45,7 +45,6 @@ def traverse(p):
 traverse(1)
 print(maxRadius[0])
 
-
 """
 
 12
