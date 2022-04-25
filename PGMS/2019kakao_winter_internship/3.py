@@ -1,35 +1,52 @@
-import math
-stones = [7,6,5,6,7,8,3,3,3,7,7,8,9,3,3,3,4,5,6]
-stones = [1,2,3,4,5,6,7,8,9]
-stones = [2,2,2,2,9,8,7,6,5,4,3,3,4,3,3,4]
-stones = [10,1,1,3,1,1,7,8,9]
-stones = [2, 4, 5, 3, 2, 1, 4, 2, 5, 1]	
-k=3
+"""
+kakao 2019 인턴십 코테 #3 불량 사용자 easy~medium
+시간복잡도 제약조건이 없어서 O(N^2) DFS로 편하게 풀었다.
+유저 아이디 길이가 최대 8인것을 이용하면 더 빠르게 풀 수 있을듯 한데..
+"""
+user_id = ["frodo", "fradi", "crodo", "abc123", "frodoc"]
+banned_id = ["fr*d*", "abc1**"]
+
+user_id = ["frodo", "fradi", "crodo", "abc123", "frodoc"]
+banned_id = ["fr*d*", "*rodo", "******", "******"]
+# banMap = user id > banned id 매칭, 
+# banMap
+
+ban_match = []
+
+def isMatch(u,b):
+    lu = len(u)
+    if lu != len(b):
+        return False
+
+    for i in range(lu):
+        if b[i] == '*':
+            continue
+        if b[i] != u[i]:
+            return False
+    return True
 
 
-flag = True
+def user_ban_match ():
+    for b in banned_id:
+        regban = []
+        for idx,u in enumerate(user_id):
+            if isMatch(u,b):
+                regban.append(idx)
+        ban_match.append(regban)
 
-minVal=1
-maxVal=2000000000
-mid = math.floor((minVal +maxVal)/2)
+user_ban_match()
 
-# O(n)
-while minVal <= maxVal:
-    mid = (minVal + maxVal)//2
-    cnt=0
-    temp = stones.copy()
-    for st in temp:
-        if st <= mid:
-            cnt = cnt+1
-        else:
-            cnt = 0
-        if cnt>=k:
-            break
-    if cnt >= k:
-        maxVal = mid-1
-    else:
-        minVal = mid+1
-
-print(minVal)
-
-
+ans= []
+# get은 리스트에 들어간 밴아이디 리스트, k는 ban_match의 인덱스
+def dfs(get,k): 
+    if k==len(ban_match):
+        if set(get) not in ans:
+           ans.append(set(get))
+        return get
+    for idx in ban_match[k]:
+        if idx not in get:
+            get_ = get.copy()
+            get_.append(idx)
+            dfs(get_,k+1)
+dfs([],0)
+print(len(ans))
