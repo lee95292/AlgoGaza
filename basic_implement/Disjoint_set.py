@@ -19,6 +19,8 @@ def union_set(x, y):
         disjoint_set[xRoot] = yRoot
 
 
-union_set(3, 2)
-union_set(3, 4)
-union_set(4, 6)
+union_set(3,4)
+union_set(4,5)
+union_set(2,3)
+
+print(disjoint_set)
