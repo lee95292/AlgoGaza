@@ -1,7 +1,13 @@
-# a= set(["zzz","asd","asf"])
+def list2int(lst, result):
+  if len(lst) == 0 :
+    return result
+  k = lst.pop()
+  if result == '':
+    s = k
+  else:
+    r = len(str(result))
+    s= 10**r*k + int(result)
 
-# print(a)
+  return list2int(lst, s)
 
-a = [1,2,3,4]
-a.pop(-1)
-print(a)
+print(list2int([1,110,1],''))
