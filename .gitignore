@@ -3,3 +3,4 @@ node_modules
 
 // 코딩테스트 제외
 PGMS/coding_test
+.vscode

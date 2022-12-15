@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch MinimalFallingSum",
+      "request": "launch",
+      "mainClass": "MinimalFallingSum",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
       "name": "Launch RemoveDupFromArr2",
       "request": "launch",
       "mainClass": "RemoveDupFromArr2",
