@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Reverse",
+      "request": "launch",
+      "mainClass": "Greedy.Reverse",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "Launch MultOrPlus",
+      "request": "launch",
+      "mainClass": "Graph.MultOrPlus",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "Launch TravelGuild",
+      "request": "launch",
+      "mainClass": "coding_test.ect.TravelGuild",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
       "name": "Launch MinimalFallingSum",
       "request": "launch",
       "mainClass": "MinimalFallingSum",

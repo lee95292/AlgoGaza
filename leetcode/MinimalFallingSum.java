@@ -7,7 +7,6 @@ public class MinimalFallingSum{
         int[][] arr1 = {{-19,57},{-40,-5}};
         int[][] arr2 =  {{2,1,3},{6,5,4},{7,8,9}};
         System.out.println(minFallingPathSum(arr2));
-
     }
 
     public static int minFallingPathSum(int[][] matrix) {
