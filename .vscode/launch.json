@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch AmountCannotMade",
+      "request": "launch",
+      "mainClass": "Greedy.AmountCannotMade",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
       "name": "Launch Reverse",
       "request": "launch",
       "mainClass": "Greedy.Reverse",
