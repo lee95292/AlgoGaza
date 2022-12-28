@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch ChooseBowlingBall",
+      "request": "launch",
+      "mainClass": "Greedy.ChooseBowlingBall",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
       "name": "Launch AmountCannotMade",
       "request": "launch",
       "mainClass": "Greedy.AmountCannotMade",

@@ -35,7 +35,7 @@ public class AmountCannotMade {
         return answer;
     }
     /*
-    Solution 1. 백준에서 메모리초과 발생: set에 2**1000의 값을 넣게됨.
+    Solution 1. 백준에서 메모리초과 발생: set에 2**1000개수의 값을 넣게됨.
     public static int Solution(int n, Integer[] money){
         Set<Integer> canMake = new TreeSet<>();
         for(int i=0; i<money.length; i+=1){
