@@ -6,7 +6,9 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
 import java.util.StringTokenizer;
+import java.util.TreeSet;
 
 public class AmountCannotMade {
     public static void main(String[] args)throws IOException {
@@ -35,8 +37,13 @@ public class AmountCannotMade {
         return answer;
     }
     /*
-    Solution 1. 백준에서 메모리초과 발생: set에 2**1000개수의 값을 넣게됨.
-    public static int Solution(int n, Integer[] money){
+    Solution 2. 백준에서 메모리초과 발생: set에 2**1001개수의 값을 넣게됨.
+
+    ((((1 1) 2) 3) 9) 11 
+
+    1 2 3 4 5 6 7 10 ~ 16
+    */
+    public static int Solution2(int n, Integer[] money){
         Set<Integer> canMake = new TreeSet<>();
         for(int i=0; i<money.length; i+=1){
             List<Integer> newNums = new ArrayList<>();
@@ -56,6 +63,6 @@ public class AmountCannotMade {
         }
         return answer;
     }
-     */
+     
 
 }

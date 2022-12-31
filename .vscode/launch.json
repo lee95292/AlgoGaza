@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch MujiEatingLive",
+      "request": "launch",
+      "mainClass": "Greedy.MujiEatingLive",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
       "name": "Launch ChooseBowlingBall",
       "request": "launch",
       "mainClass": "Greedy.ChooseBowlingBall",
