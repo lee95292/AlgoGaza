@@ -6,6 +6,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Solution15948",
+      "request": "launch",
+      "mainClass": "swea.Solution15948",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "Launch Solution1715",
+      "request": "launch",
+      "mainClass": "BOJ.Solution1715",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "Launch Solution",
+      "request": "launch",
+      "mainClass": "Solution",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "Launch Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
       "name": "Launch MujiEatingLive",
       "request": "launch",
       "mainClass": "Greedy.MujiEatingLive",

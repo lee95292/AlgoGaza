@@ -25,7 +25,7 @@ public class Reverse {
     }
 
     public static int Solution(String str) {
-        Integer[] numbers = Arrays.stream(str.split("")).map(s -> Integer.parseInt(s)).toArray(nums -> new Integer[]{nums});
+        Integer[] numbers = Arrays.stream(str.split("")).map(s -> Integer.parseInt(s)).toArray(Integer[]::new);
         int[] count = { 0, 0 };
         Integer prev = -1;
         for(int i=0; i<numbers.length; i+=1){
