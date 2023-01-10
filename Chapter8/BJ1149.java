@@ -38,3 +38,4 @@ public class BJ1149 {
 			return a;
 	}
 }
+  
