@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch HSBirthday",
+      "request": "launch",
+      "mainClass": "swea.HSBirthday",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "Launch BJ9095",
+      "request": "launch",
+      "mainClass": "Chapter8.BJ9095",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
       "name": "Launch Solution15948",
       "request": "launch",
       "mainClass": "swea.Solution15948",

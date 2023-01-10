@@ -1,4 +1,4 @@
-package divdeAndConquer;
+package Chapter7;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

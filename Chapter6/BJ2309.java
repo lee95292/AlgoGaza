@@ -1,4 +1,4 @@
-package bruteforce;
+package Chapter6;
 
 import java.util.Arrays;
 import java.util.Scanner;

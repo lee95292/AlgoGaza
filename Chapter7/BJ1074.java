@@ -1,10 +1,10 @@
-package divdeAndConquer;
+package Chapter7;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-//¹®Á¦ÀÌ¸§ : Z
+//ï¿½ï¿½ï¿½ï¿½ï¿½Ì¸ï¿½ : Z
 public class BJ1074 {
 	static int x;
 	static int y;
