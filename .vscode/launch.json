@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Solution18352",
+      "request": "launch",
+      "mainClass": "DFS_BFS.Solution18352",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "Launch Solution3190",
+      "request": "launch",
+      "mainClass": "implementation.Solution3190",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
       "name": "Launch Solution15686",
       "request": "launch",
       "mainClass": "implementation.Solution15686",

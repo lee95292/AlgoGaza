@@ -1,3 +1,6 @@
+/*
+치킨배달, 브루트포스 / 조합(Combination)
+*/
 package implementation;
 
 import java.io.BufferedReader;
