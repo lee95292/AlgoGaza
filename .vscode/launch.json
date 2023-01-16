@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch S654",
+      "request": "launch",
+      "mainClass": "others.softeer.S654",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
       "name": "Launch S390",
       "request": "launch",
       "mainClass": "others.softeer.S390",
