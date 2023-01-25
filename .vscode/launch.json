@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch S27210",
+      "request": "launch",
+      "mainClass": "BOJ.S27210",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "Launch SubSetOfMult",
+      "request": "launch",
+      "mainClass": "SubSetOfMult",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "Launch Test",
+      "request": "launch",
+      "mainClass": "others.softeer.Test",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
       "name": "Launch S654",
       "request": "launch",
       "mainClass": "others.softeer.S654",

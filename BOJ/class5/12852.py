@@ -8,15 +8,15 @@ for i in range(n,0,-1):
     if i%3==0:
         dp[i//3] = min(dp[i]+1, dp[i//3])
 
-print(dp[1])
-print(dp)
-while n>0:
-    print(n)
-    if dp[n-1] == dp[n] +1:
-        n=n-1
-    elif n%2==0 and dp[n]+1 == dp[n//2]:
-        n=n//2
-    elif n%3==0 and dp[n]+1 == dp[n//3]:
-        n=n//3
+answer = [1]
+for i in range(dp[1]-1, -1,-1):
+    if answer[-1] * 3 <=n and dp[answer[-1] * 3] == i:
+        answer.append(answer[-1] * 3)
+    elif answer[-1] * 2 <= n  and  dp[answer[-1] * 2] == i:
+        answer.append(answer[-1] * 2)
+    elif answer[-1] +1 <= n and dp[answer[-1] + 1] == i:
+        answer.append(answer[-1] + 1)
 
-    
+print(dp[1])
+for a in answer[::-1]:
+    print(a, end =' ')
