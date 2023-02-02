@@ -1,3 +1,6 @@
+/*
+ * 백준 클래스5 최소스패닝트리: MST, union-find
+ */
 package BOJ.class5;
 
 import java.io.BufferedReader;
