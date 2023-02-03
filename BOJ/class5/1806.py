@@ -1,3 +1,6 @@
+"""
+백준 클래스5, 부분한 + 투포인터
+"""
 n, s= list(map(int, input().split()))
 arr = list(map(int, input().split()))
 
