@@ -1,5 +1,5 @@
 """
-BOJ class5 구슬탈출 시뮬레이션,,?
+BOJ class5 13460 구슬탈출 시뮬레이션,,?
 
 1. 구슬 겹치지 않도록
 2. 이전에 횡단이동했으면 이후엔 종단이동
@@ -29,6 +29,8 @@ for i in range(N):
             bx,by = j,i
         elif line[j] == "R":
             rx,ry = j,i
+
+### MAIN-ALGORITHM ###
 def rolling(x,y,dx,dy,ball=[-1,-1]):
     r = 1
     while grid[y+r*dy][x+r*dx] != -1 \
@@ -41,8 +43,8 @@ def rolling(x,y,dx,dy,ball=[-1,-1]):
 
 def traverse(turn,rx,ry,bx,by,prev):
     global answer
+    # 최적화 아이디어. DFS + 가장 짧은 루트 이상으로 갈 경우 절삭
     if turn >= answer:
-        # print('answer',answer)
         return
     # print(turn,'    '*turn, f'turn: {turn}, [rx,ry]:[{rx},{ry}], [bx,by]:[{bx},{by}], prev:{prev}')
     for dir in range(prev*2 , prev*2 + 2):
@@ -51,6 +53,7 @@ def traverse(turn,rx,ry,bx,by,prev):
         redOrder = nrx*dx + nry * dy
         blueOrder = nbx * dx + nby * dy
 
+        # 먼저 움직여야하는 순서 고려 
         if redOrder >= blueOrder:
             nrx, nry = rolling(nrx,nry,dx,dy)
             nbx, nby = rolling(nbx,nby,dx,dy,[nrx,nry])

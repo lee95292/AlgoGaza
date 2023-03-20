@@ -15,8 +15,8 @@ import java.util.StringTokenizer;
 while(left <= right){
     mid = (left + right) /2;
     if(check){
+        answer = mid;
         low = mid+1;
-        answer = low;
     }else{
         high = mid-1;
     }
