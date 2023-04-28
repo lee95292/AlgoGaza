@@ -1,3 +1,7 @@
+/*
+ BOJ 2156, DP
+ 다이나믹 프로그래밍 문제, N<=2 일때를 잘 고려해야 하고, 중간에 포도주를 먹지 않더라도 그 상태를 기억해야 한다.
+ */
 package BOJ;
 
 import java.io.BufferedReader;
