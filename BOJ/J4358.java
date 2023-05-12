@@ -1,3 +1,9 @@
+/*
+생태학
+해시를 사용한 집합과 맵
+나무 점유율을 이름순으로 출력
+Treemap 사용해 자동 정렬
+ */
 package BOJ;
 
 import java.io.BufferedReader;

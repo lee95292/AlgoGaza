@@ -9,10 +9,13 @@ public class J1309 {
     static int[][] dp;
     static int answer;
     static int n;
+
     public static void main(String[] args)throws IOException{
         BufferedReader br =new BufferedReader(new InputStreamReader(System.in));
         n = Integer.parseInt(br.readLine());
         int[] dmap = new int[3];
+        LinkedList<Integer> i = new LinkedList<>();
+        
         dp = new int[n][3];
         dp[0][0] = 1;
         dp[0][1] = 1;
