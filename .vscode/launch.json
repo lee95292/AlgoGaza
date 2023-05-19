@@ -6,6 +6,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "J1647",
+      "request": "launch",
+      "mainClass": "BOJ.J1647",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "J20924",
+      "request": "launch",
+      "mainClass": "BOJ.J20924",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "J1446",
+      "request": "launch",
+      "mainClass": "BOJ.J1446",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "J1991",
+      "request": "launch",
+      "mainClass": "BOJ.J1991",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
       "name": "J1327",
       "request": "launch",
       "mainClass": "BOJ.J1327",
