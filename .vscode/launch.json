@@ -6,6 +6,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "J1976",
+      "request": "launch",
+      "mainClass": "BOJ.J1976",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "J1461",
+      "request": "launch",
+      "mainClass": "BOJ.J1461",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "J7682",
+      "request": "launch",
+      "mainClass": "BOJ.J7682",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "J2666",
+      "request": "launch",
+      "mainClass": "BOJ.J2666",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "J2502",
+      "request": "launch",
+      "mainClass": "BOJ.J2502",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
       "name": "S12025",
       "request": "launch",
       "mainClass": "BOJ.S12025",
