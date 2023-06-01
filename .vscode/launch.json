@@ -6,6 +6,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "J11505",
+      "request": "launch",
+      "mainClass": "BOJ.J11505",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "S12837",
+      "request": "launch",
+      "mainClass": "BOJ.S12837",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "S3",
+      "request": "launch",
+      "mainClass": "others.softeer.bootcamp.S3",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "J2133",
+      "request": "launch",
+      "mainClass": "BOJ.J2133",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
       "name": "J1976",
       "request": "launch",
       "mainClass": "BOJ.J1976",

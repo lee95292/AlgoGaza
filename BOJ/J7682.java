@@ -11,11 +11,15 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class J7682 {
-    static int[][] checkList = new int[][]{
-        {0,0}, {1,0}, {2,0}, {0,1}, {0,2}
-    };
+
     static int[][] moves = new int[][]{
-        {1,0}, {1,1}, {0,1}
+        {1,0},{0,1},{1,1},{-1,-1},{1,-1},{-1,1},{-1,0},{0,-1}
+    };
+    static int[][][] checkList = new int[][][]{
+        {{0,0},{1,0},{2,0}}, {{0,1},{1,1},{2,1}}, {{0,2},{1,2},{2,2}},
+        {{0,0},{0,1},{0,2}}, {{1,0},{1,1},{1,2}}, {{2,0},{2,1},{2,2}},
+        {{0,0},{1,1},{2,2}}, {{2,0},{1,1},{0,2}},
+        
     };
     public static void main(String[] args)throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -41,56 +45,92 @@ public class J7682 {
             // System.out.println(Arrays.toString(seq));
             // System.out.println(Arrays.toString(cnt));
             // 
-            for(int i=0; i<3;i++){
-                System.out.println(Arrays.toString(grid[i]));
-            }
             int[] rcnt = check(grid);
-            if(cnt[0] +1 == cnt[1] && rcnt[1] == 1 && rcnt[0] == 0){ // 마지막 X
-                System.out.println("valid1");
+            // for(int i=0; i<3;i++){
+            //     System.out.println(Arrays.toString(grid[i]));
+            // }
+            // System.out.println(Arrays.toString(rcnt));
+            // System.out.println("======");
+            if(cnt[1] > 5 || cnt[0] > 4) System.out.println("invalid");
+            else if(cnt[0] +1 == cnt[1] && rcnt[1] == 1 && rcnt[0] == 0){ // 마지막 X
+                System.out.println("valid");
             }
             else if(cnt[0] == cnt[1] && rcnt[0] == 1 && rcnt[1] == 0){ // 마지막 O
-                System.out.println("valid2");
-            }else if(cnt[1] == 5 &&rcnt[0]+rcnt[1] == 0 && isFull(seq)){
-                System.out.println("valid3");
+                System.out.println("valid");
+            }else if(cnt[1] == 5 && cnt[0]==4 && rcnt[0]+rcnt[1] == 0){
+                System.out.println("valid");
             }else{
                 System.out.println("invalid");
             }
         }
     }
-    public static boolean isFull(Integer[] seq){
-        for(Integer x : seq){
-            if(x == 0) return false;
-        }
-        return true;
-    }
+
     public static int[] check(int[][] grid){
         int[] scnt = new int[2];
-        for(int[] pos: checkList){
+        int[][] visit = new int[9][2];
+        for(int i=0; i<9; i++){
+            int gx = i%3, gy=i/3;
             Queue<int[]> que = new LinkedList<>(); // [len, O/X, x,y,dir]
-            int p = grid[pos[1]][pos[0]];
-            que.add(new int[]{0,p, pos[0],pos[1],0});
-            que.add(new int[]{0,p, pos[0],pos[1],1});
-            que.add(new int[]{0,p, pos[0],pos[1],2});
+            int p = grid[gy][gx];
+            if(p == 0 ||visit[gy*3+gx][p-1] > 0) continue;
+            que.add(new int[]{0,p, gx,gy});
             boolean flag = false;
             while(que.size() > 0){
                 int[] cur = que.poll();
-                int len = cur[0], player = cur[1], x=cur[2], y=cur[3], move = cur[4];
-                if(len == 2){
-                    flag = true;
-                    break;
+                int len = cur[0], player = cur[1], x=cur[2], y=cur[3];
+                visit[y*3+x][player-1] = i+1;
+                for(int[] mv : moves){
+                    int cx = x+mv[0], cy =y+ mv[1];
+                    if(GRID_OOR(cx, cy)) continue;
+                    if(grid[cy][cx] != player) continue;
+                    if(visit[cy*3+cx][player-1] == i+1 ) continue;
+                    que.add(new int[]{len+1, player, cx, cy});
                 }
-                int cx = x+moves[move][0], cy =y+ moves[move][1];
-                if(GRID_OOR(cx, cy)) continue;
-                if(grid[cy][cx] != player) continue;
-                que.add(new int[]{len+1, player, cx, cy, move});
             }
-            if(flag) scnt[p-1]++; 
+            int k = bingo(visit,p,i+1);
+            scnt[p-1] += k;
 
         }
         return scnt;
+    }
+    public static int bingo(int[][] visit, int player, int visitch){
+        int ret = 0;
+        for(int[][] npos : checkList){
+            boolean flag = true;
+            for(int[] pos : npos){
+                if(visit[pos[1]*3+pos[0]][player-1]== visitch) continue;
+                flag = false;
+                break;
+            }
+            if(flag) ret +=1;
+        }
+        if(ret >= 2) return 1;
+        return ret;
     }
     public static boolean GRID_OOR(int x,int y){
         if(0<= x && x< 3 && 0 <= y && y < 3)return false;
         return true;
     }
 }
+
+/*
+
+XXXOO.XXX
+XOXOXOXOX
+OXOXOXOXO
+XXOOOXXOX
+XO.OX...X
+.XXX.XOOO
+X.OO..X..
+OOXXXOOXO
+XXXXOOXOO
+OOXXXXXOO
+XXXOOOXXX
+XOXOXOXO.
+XXXOOO...
+XO.X.OXO.
+OO.O.XXXX
+XXOXOOXOX
+end
+
+ */
