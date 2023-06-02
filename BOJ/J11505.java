@@ -1,3 +1,6 @@
+/*
+ * 세그먼트 트리, REMIND: 트리 업데이트 시, Update함수 바텀업으로 동작하는 부분 기존과 다름.
+ */
 package BOJ;
 import java.io.BufferedReader;
 import java.io.IOException;

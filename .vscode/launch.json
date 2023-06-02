@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "J17472",
+      "request": "launch",
+      "mainClass": "BOJ.J17472",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "J10423",
+      "request": "launch",
+      "mainClass": "BOJ.J10423",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
       "name": "J11505",
       "request": "launch",
       "mainClass": "BOJ.J11505",
