@@ -6,6 +6,62 @@
   "configurations": [
     {
       "type": "java",
+      "name": "J1863",
+      "request": "launch",
+      "mainClass": "BOJ.J1863",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "J3020",
+      "request": "launch",
+      "mainClass": "BOJ.J3020",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "J1034",
+      "request": "launch",
+      "mainClass": "BOJ.J1034",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "J20437",
+      "request": "launch",
+      "mainClass": "BOJ.J20437",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "J17214",
+      "request": "launch",
+      "mainClass": "BOJ.J17214",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "J1027",
+      "request": "launch",
+      "mainClass": "BOJ.J1027",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "J2631",
+      "request": "launch",
+      "mainClass": "BOJ.J2631",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "J2116",
+      "request": "launch",
+      "mainClass": "BOJ.J2116",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
       "name": "J17472",
       "request": "launch",
       "mainClass": "BOJ.J17472",

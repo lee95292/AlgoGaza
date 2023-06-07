@@ -1,9 +1,9 @@
 # 리포지토리 규칙
 문제 카테고리, 번호 달기
 
-다시보면 좋을문제:   REMIND 달기
-다시 풀면 좋을 문제: REDO 달기
-못 푼 문제:        RETRY 달기
+다시보면 좋을문제:                         REMIND 달기  
+다시 풀면 좋을 문제:                       REDO 달기  
+1시간 내에 풀이를 떠올리지 못하거나, 못 푼 문제: RETRY 달기  (1달 뒤에 다시풀기)
 
 # 코딩테스트 Java 사전지식
 
@@ -35,7 +35,7 @@ PriorityQueue<Integer> pq = new PriorityQueue<>(new Comparator<String>(){
 PriorityQueue<Integer> pq = new PriorityQueue<>((left, right) -> { left.length - right.length})
 ```
 
-Algoritm Todo
+Algoritm 리마인드
 
 - 최단거리 알고리즘 리뷰
   - 다익스트라
@@ -43,10 +43,17 @@ Algoritm Todo
   - 벨만-포드
 - 문자열 알고리즘
  - trie, kmp 리뷰 
-- 세그먼트 트리 알고리즘 공부
+- Segment Tree
+- LCS, LIS
+- Coin DP
+- Tree-DP
 
-다시 풀어볼 문제
-7662(이중 우선순위 큐) 
-13549, 순간이동  우선순위 큐로 풀기
+
+### 코딩테스트 준비할때
+알고리즘 종류별로 많이 풀기 
+배 채우기  
+코세척 
+잠 충분히 자기 
+
 
 
