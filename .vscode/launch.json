@@ -6,6 +6,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CountingSort",
+      "request": "launch",
+      "mainClass": "Tips.CountingSort",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "MergeSort",
+      "request": "launch",
+      "mainClass": "Tips.MergeSort",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "QuickSort",
+      "request": "launch",
+      "mainClass": "Tips.QuickSort",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "BubbleSort",
+      "request": "launch",
+      "mainClass": "Tips.BubbleSort",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
+      "name": "J2151",
+      "request": "launch",
+      "mainClass": "BOJ.J2151",
+      "projectName": "AlgoGaza_998ad38f"
+    },
+    {
+      "type": "java",
       "name": "J25635",
       "request": "launch",
       "mainClass": "BOJ.J25635",

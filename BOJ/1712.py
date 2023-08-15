@@ -12,3 +12,5 @@ else:
     if x == a/(c-b):
         x =x+1
     print(x)
+a=  set()
+a.
